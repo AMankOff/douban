@@ -1,0 +1,61 @@
+/* pages/bfCompany/index.wxss */
+.movieListW{
+  width:100%;
+  padding: 10px 8px;
+  border-top:1px solid #ddd;
+}
+.imgW{
+  width:80px;
+  height: 118px;
+  display: inline-block;
+}
+.imgW image{
+  width:100%;
+  height: 100%;
+}
+
+.contW{
+  width:190px;
+  height: 118px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.movieTitle{
+  width:100%;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #666;
+}
+.movieCont{
+  width:100%;
+  color: #bbb;
+  font-size: 12px;
+  line-height: 16px;
+}
+.starModel{
+  width:100%;
+  height: 11px;
+  line-height: 11px;
+  font-size: 10px;
+  color: #ccc;
+  overflow: hidden;
+  position: relative;
+  margin:10px 0;
+}
+.starModel-span{
+    position: absolute;
+    left: 56px;
+    top:0px;
+}
+.starBG{
+  width:55px;
+  height: 121px;
+  left: 0;
+  position: absolute;
+}
+.getCost{
+  width: 100%;
+  font-size: 12px;
+  color: #9bdff9;
+}

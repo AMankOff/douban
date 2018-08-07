@@ -1,0 +1,68 @@
+/* pages/filmSearch/index.wxss */
+page{
+  background: #eaeaea;
+}
+.textModel{
+  width:100%;
+  border-top:1px solid #55ff99;
+  border-bottom: 1px solid #ccc;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: #fff;
+}
+.textStyle{
+  height: 45px;
+  line-height: 45px;
+  font-size: 28rpx;
+  margin: 0;
+  padding: 0;
+  margin-left: 3px;
+}
+.label_search{
+  display: inline-block;
+}
+.labelCancel{
+  width:50px;
+  height: 45px;
+  line-height: 45px;
+  color: #ccc;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  font-size: 28rpx;
+  text-align: center;
+  z-index: 10;
+  background: #fff;
+}
+
+
+.Model{
+  width:100%;
+  margin-top: 10px;
+  background: #fff;
+}
+.minModle{
+  width:100%;
+  border-bottom:0.5px solid #eaeaea; 
+  flex-wrap: nowrap;
+}
+.imgStyle{
+  width:58rpx;
+  height: 84rpx;
+  margin: 3px 5px;
+}
+.contStyle{
+  display: inline-block;
+  flex-wrap: nowrap;
+  width:640rpx;
+}
+.contTitle{
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 30px;
+}
+.contC{
+  font-size: 24rpx;
+  color: #ccc;
+}

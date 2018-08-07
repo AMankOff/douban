@@ -1,0 +1,28 @@
+/* pages/filmDetail/filmRe/index.wxss */
+.normalModel{
+  width:100%;
+  text-align: center;
+  margin-top:20px;
+}
+.normal_star{
+  width:32px;
+  height: 32px;
+}
+.normalText{
+  font-size: 28rpx;
+}
+.normalTextA{
+  width:80%;
+  font-size: 28rpx;
+  margin: 20px auto;
+  line-height: 32rpx;
+  height: 96px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding: 3px;
+  overflow-y: scroll;
+}
+.normalSub{
+  width:90%;
+  margin:5px auto;
+}

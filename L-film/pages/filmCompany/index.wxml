@@ -1,0 +1,5 @@
+<!--影院热映-->
+<import src="../templateList/list.wxml" />
+<template is="Movielist" data="{{data:Mdata}}">
+</template>
+

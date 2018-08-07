@@ -1,0 +1,42 @@
+<template name='Movielist' >
+  <block wx:for="{{data}}">
+    <view class='movieListW' bindtap="openDetail" data-id='{{item.id}}'>
+      <view class='imgW'>
+        <image src='{{item.images.small}}'></image>
+      </view>
+      <view class='contW'>
+        <view class='movieTitle word_one'>{{item.title}}</view>
+        <view class='movieCont word_one'>导演：
+        <block wx:for="{{item.directors}}" wx:for-index="idx" wx:for-item="v">
+          <span>{{v.name}}</span>
+          <block wx:if="{{idx<item.directors.length-1}}">
+            <span>/</span>
+          </block>
+        </block>
+        </view>
+        <view class='movieCont word_one'>主演：
+          <block wx:for="{{item.casts}}" wx:for-index="idx" wx:for-item="v">
+            <span>{{v.name}}</span>
+            <block wx:if="{{idx<item.casts.length-1}}">
+              <span>/</span>
+            </block>
+          </block>
+        </view>
+        <view class='movieCont word_one'>类型：
+          <block wx:for="{{item.genres}}" wx:for-index="idx" wx:for-item="v">
+            <span>{{v}}</span>
+            <block wx:if="{{idx<item.genres.length-1}}">
+              <span>/</span>
+            </block>
+          </block>
+        </view>
+        <view class='starModel'>
+
+          <image class="starBG" src='../images/ic_rating_s.png' style='bottom:-{{item.rating.stars/5*11}}px'></image>
+          <span class="starModel-span">{{item.rating.average}}</span>
+        </view>
+        <view class='getCost'>{{item.collect_count}}人想看</view>
+      </view>
+    </view>
+  </block>
+</template>

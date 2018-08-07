@@ -1,0 +1,76 @@
+/* pages/moveTop/index.wxss */
+.titleStyle{
+  width:100px;
+  color:coral;
+  font-size: 28rpx;
+  position: relative;
+  margin:20px auto;
+  background: #ccc;
+  height: 1px;
+  margin-top:45px;
+}
+.textS{
+  color:coral;
+  font-size: 28rpx;
+  position: absolute;
+  top:-10px;
+  left: 35px;
+  width: 30px;
+  background: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.contModel{
+  width:320px;
+  margin: 5px auto;
+  border: 1px solid #eaeaea;
+  -moz-box-shadow: 5px 5px 2px #eaeaea; /* 老的 Firefox */
+  box-shadow: 5px 5px 2px #eaeaea;
+  padding: 15px 10px;
+}
+
+.imgStyle{
+  width:68px;
+  height: 102px;
+}
+.textStyle{
+  display: inline-block;
+  width:230px;
+  margin-left: 5px;
+}
+.filmT{
+  font-size: 28rpx;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.imgModel{
+  width:55px;
+  height: 11px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.imgPos{
+  width:55px;
+  height: 121px;
+  position: absolute;
+  left: 0;
+}
+.cont{
+  color:#ccc;
+  font-size: 28rpx;
+  line-height: 16px;
+}
+.costStyle{
+  color:#ccc;
+  font-size: 28rpx;
+  line-height: 16px;
+}
+
+.word_five{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;   /*行数*/
+    -webkit-box-orient: vertical;
+}

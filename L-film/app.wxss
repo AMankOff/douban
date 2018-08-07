@@ -1,0 +1,85 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;vertical-align: middle;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}s
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+/*共用样式*/
+.word_one{overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }   /***单行文本显示**/
+.word_duo{overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /*行数*/
+    -webkit-box-orient: vertical;
+}
+
+html{ font:16px/1.15 "Microsoft YaHei UI"; color:#333; overflow-x:hidden;}
+
+/******特殊设置*******/
+.container-fluid{
+	width:100%;
+}
+.w{
+	width:1220px;
+	margin:0 auto;
+}
+.member-w{
+	width:1220px;
+	margin:0 auto;  /***for member.html**/
+}
+.t-w{
+	width:1220px;
+	margin:0 auto;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.al{
+	text-align:left;
+}
+.ar{
+	text-align:right;
+}
+.ac{
+	text-align:center;
+}
+.clearfix{
+	overflow:hidden;
+
+}
+.clearfix1{
+	overflow:visible;
+}
+.clearfix:after,
+.clearfix1:after{
+	clear:both;
+}
+.clearfix:before, .clearfix:after,
+.clearfix1:before, .clearfix1:after{
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}

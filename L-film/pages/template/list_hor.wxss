@@ -1,0 +1,6 @@
+.titleStyle{
+  width:100px;
+  color:coral;
+  font-size: 28rpx;
+  text-align: center;
+}

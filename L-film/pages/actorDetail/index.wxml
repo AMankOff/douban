@@ -1,0 +1,39 @@
+<template name="movieDetail" >
+  <block>
+    <view class="DetailBgM"><image src="{{data.avatars.large}}"></image></view>
+    <view class='ContStyle'>
+      <view class='titleStyle word_one'>{{data.name}}</view>
+      <view class='mesStyle'>出生地:{{data.born_place}}</view>
+      <view class='mesStyle'>{{data.birthday}}</view>
+      <view class='mesStyle'>
+        <block wx:for="{{data.professions}}" wx:for-index="idx">
+          <text class='mesStyle'>{{item}}</text>
+            <block wx:if="{{idx<data.professions.length-1}}">
+              <span>/</span>
+            </block>
+        </block>
+      </view>
+    </view>
+    <view class='ContStyle'>
+      <view class='message'>简介</view>
+      <view class='messageCont' style='height:{{state.high}};'>{{data.summary}}</view>
+      <view class='messageDetail' bindtap='messageOpen' data-state="true">{{state.cont}}</view>
+    </view>
+    <view class='ContStyle'>
+      <view class='message'>代表作品</view>
+      <scroll-view class='modelActMess' scroll-x>
+        <block wx:for="{{data.works}}">
+          <view class='messageArt' bindtap="openDetail" data-id='{{item.subject.id}}'>
+            <image src="{{item.subject.images.small}}"></image>
+            <view class='message_de word_one'>{{item.subject.title}}</view>
+            <view class='message_de word_one'>{{item.subject.rating.average}}分</view>
+            <view class='message_de word_one'>{{item.subject.collect_count}}想看</view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </block>
+</template>
+<view>
+  <template is="movieDetail" data="{{data:movieMsg,state:state}}"></template>
+</view>

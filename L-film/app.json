@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/movieTop/index",
+    "pages/filmCompany/index",
+    "pages/filmSearch/index",
+    "pages/bfCompany/index",
+    "pages/templateList/list",
+    "pages/template/list_hor",
+    "pages/filmDetail/index",
+    "pages/filmDetail/filmRe/index",
+    "pages/actorDetail/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "豆瓣-测试L",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "backgroundColor": "#eee",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "分类",
+        "iconPath": "pages/images/class2.png",
+        "selectedIconPath": "pages/images/class1.png"
+      },
+      {
+        "pagePath": "pages/filmSearch/index",
+        "text": "搜索",
+        "iconPath": "pages/images/search.png",
+        "selectedIconPath": "pages/images/search1.png"
+      }
+    ]
+  }
+}

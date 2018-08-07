@@ -1,0 +1,29 @@
+<!--pages/filmSearch/index.wxml-->
+<view class='textModel'>
+  <input type='text' class='textStyle' bindinput="searchFilm" placeholder='搜索' value='{{v}}'></input>
+  <text bindtap='cancelFun' class='labelCancel'>取消</text>
+</view>
+
+<view class='Model'>
+  <template is="searchF" data="{{data:Mdata}}"></template>
+</view>
+
+
+<template name="searchF">
+  <block wx:for="{{data}}">
+    <view class="minModle" bindtap="openDetail" data-id='{{item.id}}'>
+      <image src="{{item.images.small}}" class='imgStyle'></image>
+      <view class='contStyle'>
+        <view class='contTitle word_one'>{{item.title}}</view>
+        <view class='contC word_one'>{{item.rating.average}}分/{{item.year}}/
+          <block wx:for="{{item.directors}}" wx:for-index="idx" wx:for-item="v">
+            <span>{{v.name}}</span>
+            <block wx:if="{{idx<item.directors.length-1}}">
+              <span>/</span>
+            </block>
+          </block>
+        </view>
+      </view>
+    </view>
+  </block>
+</template>

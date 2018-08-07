@@ -1,0 +1,31 @@
+<template name="temp1">
+  <block wx:for="{{data}}" wx:for-index="idx">
+    <view bindtap="openDetail" data-id='{{item.subject.id}}'>
+      <view class='titleStyle'><text class='textS'>{{idx+1}}</text></view>
+      <view class='contModel'>
+        <image class='imgStyle' src="{{item.subject.images.small}}"></image>
+        <view class='textStyle'>
+          <view class='filmT'>{{item.subject.title}}</view>
+          <view class='costStyle'><i class="imgModel"><image src='../images/ic_rating_s.png' class='imgPos' style='bottom:-{{item.subject.rating.stars/5*11}}px'></image></i>{{item.subject.rating.average}}</view>
+          <view class='cont word_five'>虚假内容大家觉得付款斯达克放假啊士大夫立刻就但是立法京东方喀什角动量附近的历史空手道解放垃圾的说服力迪斯科飞机爱丽丝绝对是克里夫决定了司法解释打开了发掘数量的减少饭卡圣诞快乐房价爱的路上看见</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</template>
+
+<template name="temp2">
+  <block wx:for="{{data}}" wx:for-index="idx">
+    <view bindtap="openDetail" data-id='{{item.id}}'>
+      <view class='titleStyle'><text class='textS'>{{idx+1}}</text></view>
+      <view class='contModel'>
+        <image class='imgStyle' src="{{item.images.small}}"></image>
+        <view class='textStyle'>
+          <view class='filmT'>{{item.title}}</view>
+          <view class='costStyle'><i class="imgModel"><image src='../images/ic_rating_s.png' class='imgPos' style='bottom:-{{item.rating.stars/5*11}}px'></image></i>{{item.rating.average}}</view>
+          <view class='cont word_five'>虚假内容大家觉得付款斯达克放假啊士大夫立刻就但是立法京东方喀什角动量附近的历史空手道解放垃圾的说服力迪斯科飞机爱丽丝绝对是克里夫决定了司法解释打开了发掘数量的减少饭卡圣诞快乐房价爱的路上看见</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</template>

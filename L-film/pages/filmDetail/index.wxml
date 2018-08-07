@@ -1,0 +1,52 @@
+<template name="movieDetail" >
+  <block>
+    <view class="DetailBgM"><image src="{{data.images.large}}"></image></view>
+    <view class='ContStyle'>
+      <view class='titleStyle word_one'>{{data.title}}</view>
+      <text class='mesStyle'>{{data.year}}</text>
+      <block wx:for="{{data.genres}}">
+        <text class='mesStyle'>{{item}}</text>
+      </block>
+      <view class='mesStyle'>原名：{{data.original_title}}</view>
+      <view class='mesStyle'>国家：
+        <block wx:for="{{data.countries}}">
+          <text class='mesStyle'>{{item}}</text>
+        </block>
+      </view>
+      <view class='pos_model word_one'>
+        <view class='posCOST'>{{data.rating.average}}</view>
+        <view class='pos_star'><image src='../images/ic_rating_s.png' style='bottom:-{{data.rating.stars/5*11}}px'></image></view>
+        <view class='pos_count'>{{data.wish_count}}人</view>
+      </view>
+    </view>
+    <view class='ContStyle'>
+      <view class='viewS' bindtap='messFun' style='float:left;'>想看</view>
+      <view class='viewS' style='float:right;' bindtap='evaluateFun'>看过</view>
+    </view>
+    <view class='ContStyle'>
+      <view class='message'>简介</view>
+      <view class='messageCont' style='height:{{state.high}};'>{{data.summary}}</view>
+      <view class='messageDetail' bindtap='messageOpen'>{{state.cont}}</view>
+    </view>
+    <view class='ContStyle'>
+      <view class='message'>影人</view>
+      <scroll-view class='modelActMess' scroll-x>
+        <block wx:for="{{data.directors}}">
+          <view class='messageArt'  bindtap="openDetail" data-id='{{item.id}}'>
+            <image src="{{item.avatars.small}}"></image>
+            <view class='message_de word_one'>{{item.name}}</view>
+          </view>
+        </block>
+        <block wx:for="{{data.casts}}">
+          <view class='messageArt'  bindtap="openDetail" data-id='{{item.id}}'>
+            <image src="{{item.avatars.small}}"></image>
+            <view class='message_de word_one'>{{item.name}}</view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </block>
+</template>
+<view>
+  <template is="movieDetail" data="{{data:movieMsg,state:state}}"></template>
+</view>

@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='banner'>
+    <swiper duration='{{during}}' interval='{{interval}}' indicator-dots  autoplay  circular>
+      <swiper-item wx:for='{{imgUrl}}' wx:key="{{item}}">
+        <view class='swiper-itemV'><image src='{{item.src}}'></image></view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="usermotto">
+      <view class='clView' bindtap='onLine'>影院热映<span class='dircText'><image src='../images/next.png'></image></span></view>
+      
+      <view class='clView' bindtap='beforeLine'>即将上映<span class='dircText'><image src='../images/next.png'></image></span></view>
+      <view class="borWidth">
+        <view class='clView' style='border-bottom:0px;'>精选榜单</view>
+        <scroll-view scroll-x class='scrollW'>
+          <view class='modelV movie1' bindtap='highList'data-v="top250">
+            <view class='modelF'>豆瓣Top 250</view>
+            <view class='models'>8月6日-7月13</view>
+            <view class='modelImg'><image src="../images/img1.jpg"></image></view>
+          </view>
+          <view class='modelV movie2'  bindtap='highList' data-v="weekly">
+            <view class='modelF'>口碑榜</view>
+            <view class='models'>8月6日-7月13</view>
+            <view class='modelImg'><image src="../images/img2.jpg"></image></view>
+          </view>
+          <view class='modelV movie3' bindtap='highList' data-v="new_movies">
+            <view class='modelF'>新片榜</view>
+            <view class='models'>8月6日-7月13</view>
+            <view class='modelImg'><image src="../images/img3.jpg"></image></view>
+          </view>
+          <view class='modelV movie4' bindtap='highList' data-v="us_box">
+            <view class='modelF'>票房榜</view>
+            <view class='models'>8月6日-7月13</view>
+            <view class='modelImg'><image src="../images/img4.jpg"></image></view>
+          </view>
+        </scroll-view>
+      </view>
+      
+  </view>
+</view>

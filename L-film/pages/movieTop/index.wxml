@@ -1,0 +1,8 @@
+<!--pages/moveTop/index.wxml-->
+<import src="../template/list_hor.wxml" />
+<block wx:if="{{urlParam=='weekly' || urlParam=='us_box'}}">
+  <template is="temp1" data="{{data:movieData}}"></template>
+</block>
+<block wx:if="{{urlParam=='top250' || urlParam=='new_movies'}}">
+  <template is="temp2" data="{{data:movieData}}"></template>
+</block>

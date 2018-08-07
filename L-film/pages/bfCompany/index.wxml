@@ -1,0 +1,4 @@
+<!--pages/bfCompany/index.wxml-->
+<import src="../templateList/list.wxml" />
+<template is="Movielist" data="{{data:Mdata}}">
+</template>
